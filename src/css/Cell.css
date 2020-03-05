@@ -1,0 +1,12 @@
+.Cell {
+    max-width: 8rem;
+    max-height: 8rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: #EAB543;
+    border: 1px solid white;
+}
+
+.activated {
+    background-color: #2d3436 !important;
+}
