@@ -111,9 +111,11 @@ export default class Game extends Component {
               style={{
                 gridTemplateColumns: `repeat(${this.props.sideCellCount}, min-content)`
               }}
+              key={rowIndex}
             >
               {row.map((cell, cellIndex) => (
                 <Cell
+                  key={`${rowIndex}-${cellIndex}`}
                   status={cell}
                   pos={{ row: rowIndex, cell: cellIndex }}
                   click={this.click}

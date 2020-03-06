@@ -3,7 +3,38 @@
   /* padding: 5rem 0 10rem 0; */
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('../img/background.jpg');
+  background-image: url("../img/background.jpg");
+}
+
+.App-footer {
+  font-size: 1.5rem;
+  color: white;
+
+  margin-top: 4rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.App-footer > *:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+.App-social-link:active,
+.App-social-link:visited,
+.App-social-link:link {
+  display: inline-block;
+  color: black;
+  background-color: #eab543;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.App-social-link:hover {
+  transform: scale(1.05) rotate(5deg);
 }
